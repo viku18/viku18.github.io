@@ -41,14 +41,17 @@ model functionality and performance based on the generated data sets to train an
 <center><strong>Singularity</strong> </center>
 <table class="imgtable"><tr><td>
       <a href="https://docs.sylabs.io/guides/3.5/user-guide/introduction.html">
-        <img src="img/sing.png" alt="alt text" width="auto" height="450px" />
+        <img src="img/sing.png" alt="alt text" width="750" height="250" />
       </a>&nbsp;</td>
 <td align="left">
-	<h3><i>Proposed ESOMICS</i></h3>
+
 Singularity, also known as Apptainer, is a container platform specifically designed for High-Performance Computing 
 (HPC) and research environments. Its primary purpose is to enable reproducible, portable, and secure software 
 deployment. It packages software, libraries, and data into a single, immutable file, solving the "dependency hell" 
-problem and ensuring that computations run identically across different systems.
+problem and ensuring that computations run identically across different systems. In this work, we had to execute the
+applications on BSC supercomputer Marenostrum5 (MN5)  or any cluster whihc doesnt allow sudo access. The problem is 
+without sudo access the users cannot instal libraries and dependencies to run their applications sucessfully. The
+solution is to wrap everything into one container and execute successfully on it.
 </td></tr></table>
 
 </body>
